@@ -1,17 +1,6 @@
 from typing import List
 
 def partition(array: List[int], low: int, high: int) -> int:
-    """
-    Partition the array based on a pivot element.
-
-    Args:
-        array (List[int]): The list of integers to be partitioned.
-        low (int): The starting index of the partition.
-        high (int): The ending index of the partition.
-
-    Returns:
-        int: The index of the pivot element after partitioning.
-    """
     pivot = array[high]
     i = low - 1
     for j in range(low, high):
