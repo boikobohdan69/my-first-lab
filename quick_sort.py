@@ -14,17 +14,6 @@ def partition(array: List[int], low: int, high: int) -> int:
     return i + 1
 
 def quickSort(array: List[int], low: int, high: int) -> None:
-    """
-    Sort the array in ascending order using the quicksort algorithm.
-
-    Args:
-        array (List[int]): The list of integers to be sorted.
-        low (int): The starting index of the array or subarray.
-        high (int): The ending index of the array or subarray.
-
-    Returns:
-        None
-    """
     if low < high:
         # Find pivot element such that
         # elements smaller than the pivot are on the left
