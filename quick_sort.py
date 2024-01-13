@@ -6,7 +6,6 @@ def partition(array: List[int], low: int, high: int) -> int:
     for j in range(low, high):
         if array[j] <= pivot:
             i = i + 1
-            # Swapping element at i with element at j
             (array[i], array[j]) = (array[j], array[i])
 
     # Swap the pivot element with the greater element specified by i
