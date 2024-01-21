@@ -8,15 +8,11 @@ def partition(array: List[int], low: int, high: int) -> int:
             i = i + 1
             (array[i], array[j]) = (array[j], array[i])
 
-    # Swap the pivot element with the greater element specified by i
     (array[i + 1], array[high]) = (array[high], array[i + 1])
     return i + 1
 
 def quickSort(array: List[int], low: int, high: int) -> None:
     if low < high:
-        # Find pivot element such that
-        # elements smaller than the pivot are on the left
-        # elements greater than the pivot are on the right
         pi = partition(array, low, high)
         # Recursive call on the left of the pivot
         quickSort(array, low, pi - 1)
